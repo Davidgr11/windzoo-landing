@@ -1,0 +1,7 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+// Buttons
+.btnPrimary {
+    @include m.btn(v.$color4, v.$color2, v.$color4, v.$color1);
+}

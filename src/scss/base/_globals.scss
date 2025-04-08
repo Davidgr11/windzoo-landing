@@ -1,0 +1,77 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+// General Structure
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+// Text
+body {
+    font-family: v.$fontFamily;
+    font-weight: v.$fontWeightRegular;
+    font-style: v.$fontStyle;
+    font-size: 1.6rem;
+    color: v.$color1;
+    text-align: justify;
+    @include m.tablet{
+        font-size: 1.7rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: v.$fontWeightBold;
+    line-height: 4.5rem;
+    text-align: center;
+    margin:0;
+
+    @include m.tablet{
+        text-align: justify;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    @include m.tablet{
+        font-size: 4rem;
+    }
+}
+h2 {
+    font-size: 2.5rem;
+    @include m.tablet{
+        font-size: 3.5rem;
+    }
+}
+h3 {
+    font-size: 2rem;
+    @include m.tablet{
+        font-size: 3rem;
+    }
+}
+
+// Sections Spacing
+.widthSpacing {
+    width:80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.heightSpacing {
+    padding: v.$spaceRegular 0;
+}
+
+// Elements Initialization
+
+a {
+    text-decoration: none;
+    color: v.$color1;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
