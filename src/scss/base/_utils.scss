@@ -12,14 +12,26 @@
     animation-delay: 0.5s;
     animation-iteration-count: 1;
 }
+
 .animate__fadeInUp {
     animation-duration: 2s;
     animation-delay: 0.5s;
 }
+
 .animate__zoomIn {
     animation-duration: 2.5s;
 }
-.jello {
+
+.animated__jello {
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.animate__animated {
+    visibility: visible !important;
 }

@@ -429,9 +429,18 @@ img {
   animation-duration: 2.5s;
 }
 
-.jello {
+.animated__jello {
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.animate__animated {
+  visibility: visible !important;
 }
 
 .header {
