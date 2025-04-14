@@ -414,6 +414,26 @@ img {
   cursor: pointer;
 }
 
+.animate__fadeInDown {
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
+
+.animate__fadeInUp {
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
+
+.animate__zoomIn {
+  animation-duration: 2.5s;
+}
+
+.jello {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 .header {
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
